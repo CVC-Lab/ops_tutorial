@@ -83,7 +83,7 @@ jobs:
         run: source devtools/patch-all
       - name: "Run tests"
         run: |
-          pytest --nbval-lax 5_custom_shooting_setup.ipynb
+          pytest -v --durations=0 --nbval-lax 5_custom_shooting_setup.ipynb
           source devtools/run5.sh
           pytest --nbval-lax \
             6_custom_shooting_analysis.ipynb \
