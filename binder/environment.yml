@@ -12,6 +12,5 @@ dependencies:
   - openpathsampling-cli
   - openmmtools
   - jupyterlab
-  - ipywidgets <8
-  - numpy <1.24
+  - mdtraj != 1.11  # formal charge error round-tripping Topology via pandas
 prefix: /Users/dwhs/miniconda3/envs/ops-tutorial
